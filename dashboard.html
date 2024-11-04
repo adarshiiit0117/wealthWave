@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            position: relative; /* Allow positioning of logout link */
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0;
+            text-align: center; /* Center the list items */
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 18px;
+            transition: color 0.3s; /* Animation for link hover */
+        }
+
+        a:hover {
+            color: #0056b3; /* Darker color on hover */
+        }
+
+        .logout-link {
+            position: absolute; /* Position logout link at the top right */
+            top: 20px;
+            right: 20px;
+            font-size: 16px;
+            color: #ff4d4d; /* Logout link color */
+        }
+
+        .logout-link a {
+            color: #ff4d4d;
+            text-decoration: none;
+            transition: color 0.3s; /* Animation for link hover */
+        }
+
+        .logout-link a:hover {
+            color: #c70000; /* Darker red on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="logout-link">
+        <a href="/logout">Logout</a>
+    </div>
+    <h2>Welcome to the Prediction Dashboard!</h2>
+    <p>Select an option below:</p>
+    <ul>
+        <li><a href="{{ url_for('streamlit_app', option='stock') }}">Predict Stock Prices</a></li>
+        <li><a href="{{ url_for('streamlit_app', option='gold') }}">Predict Gold Prices</a></li>
+        <li><a href="{{ url_for('streamlit_app', option='nifty') }}">Predict Nifty Prices</a></li>
+        <li><a href="{{ url_for('streamlit_app', option='crypto') }}">Predict Cryptocurrency Prices</a></li> <!-- New link for crypto prediction -->
+    </ul>
+    </ul>
+</body>
+</html>
