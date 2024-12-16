@@ -75,4 +75,12 @@ The Real-Time Prediction for Stock, Bitcoin, and Gold project is a Flask-based a
 ---
 
 
+![image](https://github.com/user-attachments/assets/9631e14c-818c-4530-b05b-d6853c9da9bb)
+![image](https://github.com/user-attachments/assets/0d7f7542-a478-40f2-b6fb-3b92b767eb02)
+![image](https://github.com/user-attachments/assets/1c1b4705-5a4c-4129-a225-c1f35d6da337)
+![image](https://github.com/user-attachments/assets/d6f1d328-5f36-4ba2-9ac5-21d57a63fd0b)
+![image](https://github.com/user-attachments/assets/8e53b3b4-3d5a-445b-8b2e-17a3f1bad832)
+
+
+
 
